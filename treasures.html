@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="treasures.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Treasure Hunt</title>
+</head>
+
+<body>
+    <h1 id="title">Treasure Hunt</h1>
+
+    <div id="custom-alert"></div>
+    <div id="input-window">
+        <div id="input-prompt">
+            <p>Enter value (5-8 for treasure, 'o' for obstacle, 'h' for hunter):</p>
+            <input type="text" id="input-value">
+            <button id="okBtn">Ok</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+        
+    <div id="per-popup-background" style="display: none;"></div>
+    <div id="per-popup" style="display: none;">
+        <p>Performance Index:</p>
+        <p id="performance"></p>
+        <button onclick="closePopup()">Close Popup</button>
+    </div>
+
+    <div id="controlPanel">
+        <div id="statusInfo" style="display: none;">
+            <div class="info">
+                <p class="info-name">Score</p>
+                <p class="info-value">0</p>
+            </div>
+            <div class="info">
+                <p class="info-name">Round</p>
+                <p class="info-value">0</p>
+            </div>
+            <div class="info">
+                <p class="info-name">Treasures "5"</p>
+                <p class="info-value">0</p>
+            </div>
+            <div class="info">
+                <p class="info-name">Treasures "6"</p>
+                <p class="info-value">0</p>
+            </div>
+            <div class="info">
+                <p class="info-name">Treasures "7"</p>
+                <p class="info-value">0</p>
+            </div>
+            <div class="info">
+                <p class="info-name">Treasures "8"</p>
+                <p class="info-value">0</p>
+            </div>
+        </div>
+        <input type="button" id="ctrlBtn" value="Start">
+    </div>
+
+    <canvas id="gridCanvas"></canvas>
+
+    <script src="treasures.js"></script>
+</body>
+
+</html>

@@ -1,2 +1,3 @@
-# treasure-hunter-game
-Treasure Hunter game implemented using JavaScript
+# Treasure Hunt
+
+Single page Trasure Hunt game, implemeted using JavaScript.
